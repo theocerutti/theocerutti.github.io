@@ -49,7 +49,13 @@
 
 .github-text {
   @include text-gradient($snow, $color5);
-  margin: 1.4em;
+  @include media("<=phone") {
+    left: 18%;
+    top: 88%;
+  }
+  @include media(">phone") {
+    margin: 1.4em;
+  }
   color: $snow;
   font-family: lemonMilk-bold, $font-fallback;
   font-size: 1.4em;
