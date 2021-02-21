@@ -1,0 +1,56 @@
+@import "src/imports";
+
+.home-title {
+  color: $snow;
+  font-size: $home-title-size;
+  font-family: lemonMilk-regular, $font-fallback;
+}
+
+.home-title-name {
+  font-family: lemonMilk-bold, $font-fallback;
+  font-size: $home-title-name-size;
+}
+
+.home-title-text-loop {
+  font-family: lemonMilk-bold-italic, $font-fallback;
+}
+
+.home-background {
+  background-image: $home-gradient;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+.home-button {
+  @include btn-border-drawing($snow, $color5, 8px, bottom, right);
+  color: $snow;
+  padding: 0.5em;
+  font-size: 1.5em;
+  font-family: lemonMilk-bold, $font-fallback;
+}
+
+.align-home-button {
+  @include media("<=phone") {
+    margin-right: 25%;
+    margin-left: 25%;
+  }
+  @include media(">phone") {
+    margin-left: 50%;
+  }
+}
+
+.fixed-bottom-right {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.github-text {
+  @include text-gradient($snow, $color5);
+  margin: 1.4em;
+  color: $snow;
+  font-family: lemonMilk-bold, $font-fallback;
+  font-size: 1.4em;
+}

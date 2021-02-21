@@ -1,10 +1,7 @@
-https://github.com/fisshy/react-scroll
-https://github.com/KyleAMathews/typography.js
-https://github.com/maisano/react-router-transition
+# My Website
 
-For background
-https://github.com/framer/motion
-https://github.com/pmndrs/react-spring
-https://github.com/matteobruni/tsparticles/tree/master/components/react
+Url of my STATIC website: http://theocerutti.github.io/
 
-http://findmatthew.com/
+I made it for fun. <3
+
+With React-Redux
