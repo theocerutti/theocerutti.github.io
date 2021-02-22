@@ -36,7 +36,7 @@ const HomePage = () => {
         </div>
       </div>
       <a href="https://github.com/theocerutti">
-        <div className="fixed-bottom-right github-text">
+        <div className="fixed-bottom github-text">
           <i className="fab fa-github"/>
           <span className="ml-4">Check my github!</span>
         </div>

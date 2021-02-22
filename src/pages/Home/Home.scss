@@ -1,13 +1,31 @@
 @import "src/imports";
 
+$home-title-size: 3em;
+$home-title-name-size: 5rem;
+
+$home-title-size-mobile: 1.5em;
+$home-title-name-size-mobile: 2.5rem;
+
 .home-title {
   color: $snow;
+  @include media("<=phone") {
+    font-size: $home-title-size / 2;
+  }
+  @include media(">phone") {
+    font-size: $home-title-size;
+  }
   font-size: $home-title-size;
   font-family: lemonMilk-regular, $font-fallback;
 }
 
 .home-title-name {
   font-family: lemonMilk-bold, $font-fallback;
+  @include media("<=phone") {
+    font-size: $home-title-name-size / 2;
+  }
+  @include media(">phone") {
+    font-size: $home-title-name-size;
+  }
   font-size: $home-title-name-size;
 }
 
@@ -24,10 +42,15 @@
 }
 
 .home-button {
-  @include btn-border-drawing($snow, $color5, 8px, bottom, right);
+  @include btn-border-drawing($snow, $color5, 0.5em, bottom, right);
   color: $snow;
   padding: 0.5em;
-  font-size: 1.5em;
+  @include media("<=phone") {
+    font-size: $home-title-size-mobile / 2;
+  }
+  @include media(">phone") {
+    font-size: $home-title-size / 2;
+  }
   font-family: lemonMilk-bold, $font-fallback;
 }
 
@@ -41,22 +64,22 @@
   }
 }
 
-.fixed-bottom-right {
-  position: fixed;
+.fixed-bottom {
+  position: absolute;
   bottom: 0;
-  right: 0;
 }
 
 .github-text {
   @include text-gradient($snow, $color5);
   @include media("<=phone") {
-    left: 18%;
-    top: 88%;
+    right: 0;
+    margin: 1em;
   }
   @include media(">phone") {
     margin: 1.4em;
+    right: 0;
   }
+  font-size: $home-title-size-mobile;
   color: $snow;
   font-family: lemonMilk-bold, $font-fallback;
-  font-size: 1.4em;
 }
