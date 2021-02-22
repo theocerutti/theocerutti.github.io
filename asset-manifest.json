@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/theocerutti.github.io/static/css/main.7e401344.chunk.css",
-    "main.js": "/theocerutti.github.io/static/js/main.af117c29.chunk.js",
-    "main.js.map": "/theocerutti.github.io/static/js/main.af117c29.chunk.js.map",
+    "main.css": "/theocerutti.github.io/static/css/main.c16c853a.chunk.css",
+    "main.js": "/theocerutti.github.io/static/js/main.38d77808.chunk.js",
+    "main.js.map": "/theocerutti.github.io/static/js/main.38d77808.chunk.js.map",
     "runtime-main.js": "/theocerutti.github.io/static/js/runtime-main.012051c0.js",
     "runtime-main.js.map": "/theocerutti.github.io/static/js/runtime-main.012051c0.js.map",
     "static/css/2.e812794b.chunk.css": "/theocerutti.github.io/static/css/2.e812794b.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.dd30362f.chunk.js.map": "/theocerutti.github.io/static/js/2.dd30362f.chunk.js.map",
     "index.html": "/theocerutti.github.io/index.html",
     "static/css/2.e812794b.chunk.css.map": "/theocerutti.github.io/static/css/2.e812794b.chunk.css.map",
-    "static/css/main.7e401344.chunk.css.map": "/theocerutti.github.io/static/css/main.7e401344.chunk.css.map",
+    "static/css/main.c16c853a.chunk.css.map": "/theocerutti.github.io/static/css/main.c16c853a.chunk.css.map",
     "static/js/2.dd30362f.chunk.js.LICENSE.txt": "/theocerutti.github.io/static/js/2.dd30362f.chunk.js.LICENSE.txt",
     "static/media/Home.scss": "/theocerutti.github.io/static/media/fa-solid-900.f4f93856.woff"
   },
@@ -18,7 +18,7 @@
     "static/js/runtime-main.012051c0.js",
     "static/css/2.e812794b.chunk.css",
     "static/js/2.dd30362f.chunk.js",
-    "static/css/main.7e401344.chunk.css",
-    "static/js/main.af117c29.chunk.js"
+    "static/css/main.c16c853a.chunk.css",
+    "static/js/main.38d77808.chunk.js"
   ]
 }
