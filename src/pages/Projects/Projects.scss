@@ -1,0 +1,19 @@
+@import "src/imports";
+
+.project-hero {
+  background-color: $raisin-black;
+  border-radius: 0 0 8% 8%;
+}
+
+.project-hero-body {
+  color: $snow
+}
+
+.project-search-bar {
+  @include media("<=phone") {
+    width: 100%;
+  }
+  @include media(">phone") {
+    width: 50%;
+  }
+}
