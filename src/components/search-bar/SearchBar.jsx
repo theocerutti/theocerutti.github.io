@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import Field from "react-bulma-components/lib/components/form/components/field";
 import Control from "react-bulma-components/lib/components/form/components/control";
@@ -7,13 +7,13 @@ import { search } from "../../slices/searchDataSlice";
 
 const SearchBar = (props) => {
   const dispatch = useDispatch();
-  const [ value, setValue ] = useState('')
+  const [value, setValue] = useState("");
 
   const onChange = (e) => {
     const targetValue = e.target.value;
-    setValue(targetValue)
-    dispatch(search(targetValue))
-  }
+    setValue(targetValue);
+    dispatch(search(targetValue));
+  };
 
   return (
     <Field className={ props.className }>

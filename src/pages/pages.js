@@ -6,4 +6,4 @@ export {
   AboutPage,
   HomePage,
   ProjectsPage
-}
+};

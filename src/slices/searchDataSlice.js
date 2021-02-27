@@ -1,23 +1,26 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 export const searchDataSlice = createSlice({
-  name: 'searchData',
+  name: "searchData",
   initialState: {
     data: [],
     filteredData: []
   },
   reducers: {
-    getData: (state, { payload }) => {
-      state.data = payload
-      state.filteredData = payload
+    getFilterMethod: (state, { payload }) => {
+      state.filterMethod = payload;
     },
-    search: (state, { payload })  => {
+    getData: (state, { payload }) => {
+      state.data = payload;
+      state.filteredData = payload;
+    },
+    search: (state, { payload }) => {
       if (payload.length) {
         state.filteredData = state.data.filter(data => {
-          return data.name.toLowerCase().substr(0, payload.length).includes(payload.toLowerCase());
-        })
+          return data.name.toLowerCase().includes(payload.toLowerCase());
+        });
       } else {
-        state.filteredData = state.data
+        state.filteredData = state.data;
       }
     }
   },

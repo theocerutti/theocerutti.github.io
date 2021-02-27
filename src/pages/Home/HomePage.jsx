@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 import TextLoop from "react-text-loop";
-import { Link } from 'react-router-dom';
-import './Home.scss';
+import { Link } from "react-router-dom";
+import "./Home.scss";
 
 const suggestions = [
   "student",
@@ -10,24 +10,24 @@ const suggestions = [
   "cloud",
   "devops",
   "passionate"
-]
+];
 
 const HomePage = () => {
   return (
-    <div className="home-background" style={{ display: "flex" }}>
-      <div className="has-text-centered" style={{ margin: "auto " }}>
+    <div className="home-background" style={ { display: "flex" } }>
+      <div className="has-text-centered" style={ { margin: "auto " } }>
         <div>
           <p className="home-title">I'm <span className="home-title-name">Théo Cerutti</span></p>
-          <p className="home-title">A{' '}
+          <p className="home-title">A{ " " }
             <TextLoop
               className="home-title-text-loop"
               children={ suggestions }
-              springConfig={{ stiffness: 80, damping: 8 }}
+              springConfig={ { stiffness: 80, damping: 8 } }
             />
-            {' '}Developer
+            { " " }Developer
           </p>
         </div>
-        <div style={{ paddingTop: "3em" }}>
+        <div style={ { paddingTop: "3em" } }>
           <div className="align-home-button">
             <Link to="projects">
               <div className="home-button">View My Projects</div>

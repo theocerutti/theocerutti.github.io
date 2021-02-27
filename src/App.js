@@ -1,10 +1,10 @@
-import React from 'react';
-import './App.scss';
+import React from "react";
+import "./App.scss";
 import {
   AboutPage,
   HomePage,
   ProjectsPage
-} from 'pages/pages'
+} from "pages/pages";
 import {
   BrowserRouter as Router,
   Switch,

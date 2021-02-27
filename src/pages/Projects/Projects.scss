@@ -1,4 +1,60 @@
 @import "src/imports";
+@import "~react-bulma-components/lib/index.sass";
+
+.hvr-icon-fade-star {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-icon-fade-star .hvr-icon {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color;
+  transition-property: color;
+}
+.hvr-icon-fade-star:hover .hvr-icon, .hvr-icon-fade-star:focus .hvr-icon, .hvr-icon-fade-star:active .hvr-icon {
+  color: $gold;
+}
+
+.github-error-notification {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  z-index: 101;
+  position: fixed !important;
+  margin: 2em;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.no-repo {
+  text-align: center;
+  margin-top: 5em;
+}
+
+.loader {
+  margin: 10em auto;
+  border: 8px solid $raisin-black;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  height: 2em;
+  width: 2em;
+}
+
+.repo-link {
+  color: hsl(0, 0%, 21%); // bulma $title-color
+  transition: 0.5s;
+  &:hover {
+    text-align: center;
+    transition: 0.5s;
+    color: $blue-munsell
+  }
+}
 
 .project-hero {
   background-color: $raisin-black;

@@ -1,8 +1,8 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import axios from 'axios';
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import axios from "axios";
 
 export const githubReposSlice = createSlice({
-  name: 'githubRepos',
+  name: "githubRepos",
   initialState: {
     repos: [],
     hasErrors: false,
@@ -11,7 +11,8 @@ export const githubReposSlice = createSlice({
   },
   reducers: {
     getRepos: state => {
-      state.loading = true
+      state.loading = true;
+      state.hasErrors = false;
     },
     getReposSucess: (state, { payload }) => {
       state.repos = payload;
@@ -33,15 +34,15 @@ export const fetchRepos = createAsyncThunk(
   (_, thunkAPI) => {
     thunkAPI.dispatch(getRepos());
 
-    axios.get("https://api.github.com/search/repositories?q=react&page=1&per_page=10").then(res => {
+    axios.get("https://api.github.com/users/theocerutti/repos").then(res => {
       console.log(res);
       thunkAPI.dispatch(getReposSucess(res.data));
     }).catch(err => {
       thunkAPI.dispatch(getReposFailure(err));
-    })
+    });
   }
 );
 
-export const selectGithubReposValues = state => state.githubReposSlice
+export const selectGithubReposValues = state => state.githubReposSlice;
 
 export default githubReposSlice.reducer;
