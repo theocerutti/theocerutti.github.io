@@ -4,7 +4,7 @@ import Hero from "react-bulma-components/lib/components/hero";
 import Container from "react-bulma-components/lib/components/container";
 import Loader from "react-bulma-components/lib/components/loader";
 import Heading from "react-bulma-components/lib/components/heading";
-import SearchBar from "../../components/search-bar/SearchBar";
+import SearchBar from "../../components/SearchBar";
 import { fetchRepos, selectGithubReposValues } from "../../slices/githubReposSlice";
 import { getData, selectFilteredData } from "../../slices/searchDataSlice";
 import ProjectCard from "./ProjectCard";

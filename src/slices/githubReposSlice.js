@@ -31,15 +31,26 @@ export const { search, getRepos, getReposFailure, getReposSucess } = githubRepos
 
 export const fetchRepos = createAsyncThunk(
   "repos/fetchMyRepos",
-  (_, thunkAPI) => {
+  async (_, thunkAPI) => {
     thunkAPI.dispatch(getRepos());
 
-    axios.get("https://api.github.com/users/theocerutti/repos").then(res => {
-      console.log(res);
-      thunkAPI.dispatch(getReposSucess(res.data));
-    }).catch(err => {
+    try {
+      const res = await axios.get("https://api.github.com/users/theocerutti/repos")
+      let repos = await res.data.map(async repo => {
+        try {
+          const res = await axios.get(`https://api.github.com/repos/${ repo.full_name }/languages`);
+          if (res)
+            repo['detailed_languages'] = res.data
+          return repo
+        } catch (e) {
+          return repo
+        }
+      })
+      repos = await Promise.all(repos)
+      thunkAPI.dispatch(getReposSucess(repos));
+    } catch (err) {
       thunkAPI.dispatch(getReposFailure(err));
-    });
+    }
   }
 );
 

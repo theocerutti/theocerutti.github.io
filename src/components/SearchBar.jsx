@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import Field from "react-bulma-components/lib/components/form/components/field";
 import Control from "react-bulma-components/lib/components/form/components/control";
 import Input from "react-bulma-components/lib/components/form/components/input";
-import { search } from "../../slices/searchDataSlice";
+import { search } from "../slices/searchDataSlice";
 
 const SearchBar = (props) => {
   const dispatch = useDispatch();

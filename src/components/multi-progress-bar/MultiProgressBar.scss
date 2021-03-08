@@ -1,0 +1,47 @@
+.multi-progress-bar {
+}
+
+.multi-progress-bar .values .value {
+  float: left;
+  text-align: center;
+}
+
+.multi-progress-bar .scale .graduation {
+  float: left;
+  text-align: center;
+}
+
+.multi-progress-bar .bars .bar {
+  float: left;
+  height: 10px;
+}
+
+.multi-progress-bar .bars a.bar:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.multi-progress-bar .bars a.bar:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.multi-progress-bar .legends {
+  text-align: center;
+}
+
+.multi-progress-bar .legends .legend {
+  display: inline-block;
+  margin: 0 5px;
+  text-align: center;
+}
+
+.multi-progress-bar .legends .legend .dot {
+  font-size: 25px;
+  vertical-align: middle;
+}
+
+.multi-progress-bar .legends .legend .label {
+  margin-left: 2px;
+  vertical-align: middle;
+}
