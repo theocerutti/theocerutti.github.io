@@ -13,6 +13,7 @@ const MultiProgressBar = ({ data, showLegends, renderLegends, className }) => {
               if (item.value > 0) {
                 const uuid = uuidv4();
                 return (
+                  // eslint-disable-next-line
                   <a data-tip
                      data-for={ `multi-progress-bar-tooltip-${ uuid }` }
                      className="bar"
