@@ -12,6 +12,10 @@ const ProjectCard = ({ repo }) => {
   const formatMultiProgressData = () => {
     const languages = repo.detailed_languages;
     let totalValue = 0;
+
+    if (!languages)
+      return [];
+
     Object.keys(languages).map(key => totalValue += languages[key])
 
     return Object.keys(languages).map(key => {
